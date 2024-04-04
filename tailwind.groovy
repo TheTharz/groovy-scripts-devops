@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Stage-3') {
             steps {
-                echo 'Hello, World!'
+                sh "docker run --name tailwind"
             }
         }
     }
